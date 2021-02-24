@@ -1,0 +1,13 @@
+{
+  "name": "banco-name",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts":{
+    "compile": "tsc",
+    "start": "tsc -w"
+  },
+  "dependencies": {
+    "typescript": "^4.2.2"
+  }
+}
