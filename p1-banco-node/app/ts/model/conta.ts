@@ -1,4 +1,5 @@
 class Conta {
+
     private _numero: string;
     private _saldo: number;
 
@@ -19,15 +20,19 @@ class Conta {
         return this._saldo;
     }
 
-    debitar(valor: number) {
+    debitar(valor: number): void {
         //apenas debita se houver saldo
         if (valor < this._saldo) {
             this._saldo -= valor;
         }
     }
 
-    creditar(valor: number) {
+    creditar(valor: number): void {
         this._saldo += valor;
     }
 
+    toString(): string {
+        return `Número: ${this._numero} 
+        - Saldo: ${this._saldo}`;
+    }
 }
