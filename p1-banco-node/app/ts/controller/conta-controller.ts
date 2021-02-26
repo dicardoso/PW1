@@ -6,10 +6,8 @@ class ContaController {
     private contas: Contas;
 
     constructor() {
-        this.inputNumero =
-            <HTMLInputElement>document.querySelector("#conta")
-        this.inputSaldo =
-            <HTMLInputElement>document.querySelector("#saldo");
+        this.inputNumero = <HTMLInputElement>document.querySelector("#conta")
+        this.inputSaldo = <HTMLInputElement>document.querySelector("#saldo");
         this.contas = new Contas();
     }
 

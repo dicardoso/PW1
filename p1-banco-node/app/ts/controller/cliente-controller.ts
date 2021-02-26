@@ -11,8 +11,8 @@ class ClienteController {
     constructor() {
         this._inputNumero =<HTMLInputElement>document.querySelector("#conta");
         this._inputSaldo = <HTMLInputElement>document.querySelector("#saldo");
-        this._inputNome=<HTMLInputElement>document.querySelector("#nome");
-        this._inputCpf=<HTMLInputElement>document.querySelector("#cpf");
+        this._inputNome= <HTMLInputElement>document.querySelector("#nome");
+        this._inputCpf= <HTMLInputElement>document.querySelector("#cpf");
 
         this._contas = new Contas();
         this._clientes = new Clientes();

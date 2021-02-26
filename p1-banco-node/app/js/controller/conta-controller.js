@@ -1,9 +1,7 @@
 class ContaController {
     constructor() {
-        this.inputNumero =
-            document.querySelector("#conta");
-        this.inputSaldo =
-            document.querySelector("#saldo");
+        this.inputNumero = document.querySelector("#conta");
+        this.inputSaldo = document.querySelector("#saldo");
         this.contas = new Contas();
     }
     inserir(evento) {
