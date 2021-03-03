@@ -4,5 +4,6 @@ Disciplina cursada no [IFPB - João Pessoa](https://www.ifpb.edu.br/joaopessoa) 
 
 ## Atividades
 * Prática 1: [Sistema Bancário](/p1-banco-node);
+* Prática 2: [Social Web](/social-web-1-Listagem-Simples-Usuario)
 
 ## Projetos
