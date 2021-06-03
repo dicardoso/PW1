@@ -10,8 +10,10 @@ export class AreaService {
   constructor(private httpClient: HttpClient) {
   }
 
-  // URL_AREAS = 'http://localhost:3000/areas';
-  URL_AREAS = 'http://localhost:8080/areas/listAreas';
+  URL_AREAS = 'http://localhost:3000/areas';
+  //URL_AREAS_GET = 'http://localhost:8080/areas/listAreas';
+  //URL_AREAS_POST = 'http://localhost:8080/areas/insertAreas';
+  //URL_AREAS_DELETE = 'http://localhost:8080/areas/deleteArea';
 
   httpOptions = {
     headers: new HttpHeaders({

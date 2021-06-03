@@ -3,5 +3,5 @@ export class User {
   login?: String;
   pass?: String;
   apartment?: number;
-  is_adm?: boolean;
+  _adm?: boolean;
 }

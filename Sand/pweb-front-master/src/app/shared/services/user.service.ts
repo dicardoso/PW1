@@ -11,8 +11,8 @@ export class UserService {
   constructor(private httpClient: HttpClient) {
   }
 
-  //URL_USERS = 'http://localhost:3000/users';
-  URL_USERS = 'http://localhost:8080/dweller/listDweller';
+  URL_USERS = 'http://localhost:3000/users';
+  //URL_USERS_GET = 'http://localhost:8080/dweller/listDweller';
 
   list(): Observable<User[]> {
     return this.httpClient.get<User[]>(this.URL_USERS);

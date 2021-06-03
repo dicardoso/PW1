@@ -37,7 +37,7 @@ export class LoginComponent implements OnInit {
     console.log(auth)
     if (auth) {
       if (auth[0].pass === this.input_pass.toLowerCase()) {
-        this.router.navigate(['/listing-areas', auth[0].is_adm ? 'admin' : 'user']);
+        this.router.navigate(['/listing-areas', auth[0]._adm ? 'admin' : 'user']);
       }
     } else {
 

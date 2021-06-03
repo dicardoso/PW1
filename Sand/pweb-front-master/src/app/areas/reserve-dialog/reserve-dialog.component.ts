@@ -70,7 +70,10 @@ export class ReserveDialogComponent implements OnInit {
           this.reserve.apartment = this.apartment
           this.reserve.reason = this.reason
           this.reserveService.create(this.reserve).subscribe(
-            reserve => console.log(reserve)
+            reserve => {
+              console.log(reserve)
+              this.dialogRef.close();
+            }
           );
         }
       }

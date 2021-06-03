@@ -20,13 +20,16 @@ import {FormsModule} from '@angular/forms';
 import {ReserveDialogComponent} from './areas/reserve-dialog/reserve-dialog.component';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import { ListingReservesDialogComponent } from './areas/listing-reserves-dialog/listing-reserves-dialog.component';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListingAreasComponent,
     RegistrationAreasComponent,
-    ReserveDialogComponent
+    ReserveDialogComponent,
+    ListingReservesDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +47,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatDialogModule,
     FormsModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

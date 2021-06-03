@@ -5,21 +5,25 @@ import {MatCardModule} from '@angular/material/card';
 import { MatDatepicker } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
-
+import { ListingReservesDialogComponent } from './listing-reserves-dialog/listing-reserves-dialog.component';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
-    ReserveDialogComponent
+    ReserveDialogComponent,
+    ListingReservesDialogComponent
   ],
   exports: [
-    ReserveDialogComponent
+    ReserveDialogComponent,
+    ListingReservesDialogComponent
   ],
   imports: [
     CommonModule,
     MatCardModule,
     MatDatepicker,
     MatNativeDateModule,
-    MatSnackBar
+    MatSnackBar,
+    MatTableModule
   ]
 })
 export class AreasModule {

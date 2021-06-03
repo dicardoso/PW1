@@ -5,6 +5,7 @@ import {RegistrationAreasComponent} from '../registration-areas/registration-are
 import {MatDialog} from '@angular/material/dialog';
 import {ReserveDialogComponent} from '../reserve-dialog/reserve-dialog.component';
 import { ActivatedRoute } from '@angular/router';
+import { ListingReservesDialogComponent } from '../listing-reserves-dialog/listing-reserves-dialog.component';
 
 @Component({
   selector: 'app-listing-areas',
@@ -37,6 +38,13 @@ export class ListingAreasComponent implements OnInit {
   openReserveDialog(areaSelec: Area) {
     const dialogRef = this.dialog.open(ReserveDialogComponent, {
       width: '500px',
+      data: {area: areaSelec}
+    });
+  }
+
+  listReserves(areaSelec: Area) {
+    const dialogRef = this.dialog.open(ListingReservesDialogComponent, {
+      width: '700px',
       data: {area: areaSelec}
     });
   }
